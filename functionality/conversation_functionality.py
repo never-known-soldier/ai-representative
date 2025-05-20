@@ -49,11 +49,13 @@ def evaluate_lead_with_groq(conversation: str) -> tuple[str, str]:
             - Whether it's an individual or a business
             - Urgency and timeline for help
 
-            Respond with exactly two lines:
-            First line: the lead relevance tag (from the list above)
-            Second line: If the lead is a "hot lead" or "big customer in mongo", respond:
+            Respond with exactly three lines:
+            1. The lead relevance tag (from the list above)
+            2. A brief explanation for why this category was chosen
+            3. If the lead is a "hot lead" or "big customer in mongo", respond:
             "Thanks for the info! Please schedule a call: https://calendly.com/fake-company/intro"
-            Otherwise, leave the second line blank.""")
+            Otherwise, leave the third line blank.
+""")
                 },
                 {
                     "role": "user",
